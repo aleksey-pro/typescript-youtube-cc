@@ -27,3 +27,5 @@ const logObjr = ({a, b} : {a: number: b: number}) : void  => {console.log(a): co
 5) Диструктуризация с определением типов
 const age: number = profile.age === const {age} : {age: number} = profile;
 const {coords: {lat, lang}} : {coords: {lat: number, lang: number}} = profile;
+
+6) При работе с массивами - ts знает какие типы внутри, поэтому при извлечении элемента из массива  - он знает типа этого элемента,  и не даст добавить в массив элемент другого типа
